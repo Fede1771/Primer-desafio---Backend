@@ -67,7 +67,8 @@ console.log (manager.getProduct());
 manager.addProduct ("Producto prueba", "Esto es para testear", 200, "No img", "abc123", 25);
 
 //El objeto debe agregarse satisfactoriamente con un id generado automáticamente SIN REPETIRSE
-
+manager.addProduct ("Pizza", "Esto es rico", 500, "No img", "abc321", 15);
+console.log (manager.getProduct());
 
 //Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
 console.log (manager.getProduct());
@@ -75,7 +76,6 @@ console.log (manager.getProduct());
 //Se llamará al método “addProduct” con los mismos campos de arriba, debe arrojar un error porque el código estará repetido.
 manager.addProduct ("Producto prueba", "Esto es para testear", 200, "No img", "abc123", 25);
 
-
-manager.addProduct ("Pizza", "Esto es rico", 500, "No img", "abc321", 15);
-console.log (manager.getProduct());
 //Se evaluará que getProductById devuelva error si no encuentra el producto o el producto en caso de encontrarlo
+console.log("Se verifica si hay pizza")
+manager.getProductByID(2);
